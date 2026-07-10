@@ -2,14 +2,70 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Tính tiền</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Money Counter</title>
+
+<link rel="manifest" href="manifest.json">
+
+<link rel="stylesheet" href="style.css">
+
+<meta name="theme-color" content="#0A84FF">
+
 </head>
-<body style="font-family:Arial;text-align:center;margin-top:100px">
 
-<h1>🎉 GitHub Pages hoạt động!</h1>
+<body>
 
-<p>Nếu bạn nhìn thấy trang này trên iPhone thì thành công.</p>
+<div class="app">
+
+<h1>💰 TÍNH TIỀN</h1>
+
+<div class="card">
+
+<div class="money" id="money">
+0 đ
+</div>
+
+<div class="count" id="count">
+0 lần
+</div>
+
+<div class="buttons">
+
+<button id="minus">
+−
+</button>
+
+<button id="plus">
++
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<h2>📋 Lịch sử</h2>
+
+<div id="history"></div>
+
+</div>
+
+<div class="bottom">
+
+<button id="export">
+Xuất CSV
+</button>
+
+<button id="reset">
+Reset
+</button>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
 
 </body>
 </html>
